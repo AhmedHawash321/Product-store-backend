@@ -6,7 +6,7 @@ import {
   NewProductInput,
 } from "../../db/validation";
 import { ROLES } from "../../config/roles";
-import { GraphQLContext } from "../../Authorization/context";
+import { GraphQLContext } from "../../authorization/context";
 import { eq } from "drizzle-orm";
 import { db } from "../../db";
 import { products } from "../../db/schema";

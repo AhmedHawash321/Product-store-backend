@@ -1,5 +1,5 @@
 import * as queries from "../../db/queries";
-import { GraphQLContext } from "../../Authorization/context";
+import { GraphQLContext } from "../../authorization/context";
 import { stripeService } from "../../middleware/services/stripe.service";
 import { GraphQLError } from "graphql";
 

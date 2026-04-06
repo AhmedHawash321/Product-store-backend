@@ -1,7 +1,7 @@
 import { GraphQLError } from "graphql";
 import * as queries from "../../db/queries";
 import { insertCartItemSchema } from "../../db/validation";
-import { GraphQLContext } from "../../Authorization/context";
+import { GraphQLContext } from "../../authorization/context";
 import { db } from "../../db";
 import { cartItems } from "../../db/schema";
 import { eq } from "drizzle-orm";

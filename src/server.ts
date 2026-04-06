@@ -9,7 +9,7 @@ import { clerkMiddleware } from "@clerk/express";
 import { createSchema, createYoga } from "graphql-yoga";
 import { mergedTypeDefs } from "./graphql/typedefs";
 import { mergedResolvers } from "./graphql/resolvers";
-import { createContext, GraphQLContext } from "./Authorization/context";
+import { createContext, GraphQLContext } from "./authorization/context";
 import { stripe } from "./middleware/services/stripe.service";
 import * as queries from "./db/queries";
 
