@@ -333,7 +333,7 @@ users ────────────────────────�
 **Ahmed Hawash**
 Backend Engineer · Node.js & Rust · Blockchain Developer
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmed_Hawash-blue)](https://linkedin.com/in/ahmed-hawash)
+[![LinkedIn](https://www.linkedin.com/in/ahmed-hawash-21b992149/-blue)](https://www.linkedin.com/in/ahmed-hawash-21b992149/)
 [![GitHub](https://img.shields.io/badge/GitHub-AhmedHawash321-black)](https://github.com/AhmedHawash321)
 
 ## 📄 License
