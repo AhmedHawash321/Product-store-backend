@@ -1,4 +1,4 @@
-# 🛒 Product Store API
+# 🛒 Product Store Backend
 
 A production-ready **GraphQL API** for a full-featured e-commerce platform — built with Node.js, TypeScript, and a modern backend stack including authentication, payments, rate limiting, and containerization.
 
@@ -155,6 +155,7 @@ npm run dev
 ```bash
 docker compose up --build
 ```
+<img width="2174" height="1524" alt="Screenshot 2026-04-05 170706" src="https://github.com/user-attachments/assets/3a03e057-6e50-460a-88b5-1b1e4930760d" />
 
 ---
 
@@ -174,6 +175,7 @@ npm run test:ui
 **Test coverage includes:**
 - Rate limiter — allows N requests, blocks the N+1st
 - Cart total calculation logic
+<img width="1452" height="1355" alt="Screenshot 2026-04-05 201203" src="https://github.com/user-attachments/assets/673eebf1-5140-4c18-a86b-7d65ec9aeb5a" />
 
 ---
 
@@ -221,6 +223,8 @@ mutation {
   }
 }
 ```
+<img width="2880" height="1524" alt="Screenshot 2026-04-03 1854512" src="https://github.com/user-attachments/assets/fbd4f620-12ec-4c00-bfe4-a98809c7c472" />
+
 
 ### Add to Cart (Auth required)
 ```graphql
@@ -231,6 +235,8 @@ mutation {
   }
 }
 ```
+<img width="2880" height="1524" alt="Screenshot 2026-04-04 154746" src="https://github.com/user-attachments/assets/f038f587-7c3e-4346-98ad-73c42199cdc1" />
+
 
 ### Checkout (Auth required)
 ```graphql
@@ -242,6 +248,24 @@ mutation {
 ```
 
 > **Authentication:** Pass `Authorization: Bearer <clerk_token>` in request headers.
+
+---
+## 💳 Stripe Checkout & Order Lifecycle
+
+Every order goes through a strict state transition to ensure payment integrity, managed securely via Stripe webhooks and database transactions.
+
+### 1. Initiate Payment (Client to API)
+The user initiates checkout by calling the `createCheckoutSession` mutation. This prepares a temporary order and returns a secure Stripe Checkout URL.
+
+```graphql
+mutation {
+  createCheckoutSession {
+    # 🔗 Secure Stripe redirect URL for payment
+    url
+  }
+}
+```
+<img width="2386" height="1372" alt="Screenshot 2026-04-05 102401" src="https://github.com/user-attachments/assets/66c6744d-4885-4eb3-9de2-9ef789be1113" />
 
 ---
 
@@ -260,6 +284,7 @@ Order status updated: pending → completed
         ↓
 Cart cleared automatically
 ```
+<img width="1208" height="1225" alt="Screenshot 2026-04-05 102935" src="https://github.com/user-attachments/assets/e5c62bb5-4ac8-47db-929a-5802fa139531" />
 
 ---
 
@@ -310,3 +335,7 @@ Backend Engineer · Node.js & Rust · Blockchain Developer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmed_Hawash-blue)](https://linkedin.com/in/ahmed-hawash)
 [![GitHub](https://img.shields.io/badge/GitHub-AhmedHawash321-black)](https://github.com/AhmedHawash321)
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
