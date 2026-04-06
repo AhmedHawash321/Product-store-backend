@@ -119,7 +119,7 @@ Request → Clerk JWT verified → userId extracted from context
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/AhmedHawash321/product-store-api
+git clone https://github.com/AhmedHawash321/product-store-backend
 cd product-store-api
 npm install
 ```
