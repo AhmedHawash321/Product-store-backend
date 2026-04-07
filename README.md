@@ -34,7 +34,6 @@ A production-ready **GraphQL API** for a full-featured e-commerce platform — b
 | Validation | Zod + drizzle-zod |
 | Testing | Vitest + Supertest |
 | Container | Docker + Docker Compose |
-| Deploy | Railway |
 
 ---
 
